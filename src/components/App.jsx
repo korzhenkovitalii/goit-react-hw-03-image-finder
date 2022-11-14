@@ -97,8 +97,8 @@ class App extends React.Component {
       return (
         <div className={css.app}>
           <Searchbar onSubmit={this.handleFormSubmit} />
-          <Loader />
           <ImageGallery images={images} toggleModal={this.toggleModal} />
+          <Loader />
           <ToastContainer autoClose={2000} />
         </div>
       );
